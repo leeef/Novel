@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/size_20dp">
+
+        <TextView
+            android:id="@+id/card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_30sp"
+            tools:text="5.00" />
+
+        <TextView
+            android:id="@+id/car_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_12sp"
+            tools:text="Rechargeable gift card $5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/purchase"
+            android:layout_width="@dimen/size_80dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_button_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/login_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purchase"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

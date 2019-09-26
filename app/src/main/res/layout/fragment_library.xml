@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:toolbarId="@+id/toolbar">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:id="@+id/library_top_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:paddingStart="@dimen/size_5dp">
+
+                    <EditText
+                        android:id="@+id/library_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/size_5dp"
+                        android:layout_weight="9"
+                        android:background="@drawable/library_search_bg"
+                        android:drawableStart="@drawable/library_search"
+                        android:drawablePadding="@dimen/size_10dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/enter_your_preferred_type"
+                        android:paddingLeft="@dimen/size_5dp"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:id="@+id/library_all_category"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:layout_marginRight="@dimen/size_10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/library_catalog" />
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--包含可滑动的布局内容(RecyclerView,NestedScrollView,不支持ListView，ScrollView)
+           必须要设置app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           属性来告知CoordinatorLayout该组件是带有滑动行为的组件,
+           然后CoordinatorLayout在接受到滑动时会通知AppBarLayout中可滑动的Toolbar可以滑出屏幕-->
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/library_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="@dimen/size_20dp">
+
+                <LinearLayout
+                    android:id="@+id/whole"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/simple_item_click_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_green_oval"
+                        android:scaleType="center"
+                        android:src="@drawable/library_whole" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:text="@string/whole"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/literature"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/simple_item_click_bg"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_green_oval"
+                        android:scaleType="center"
+                        android:src="@drawable/library_literature" />
+
+                    <TextView
+                        android:id="@+id/top1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        tools:text="@string/literature"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/biography"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/simple_item_click_bg"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_green_oval"
+                        android:scaleType="center"
+                        android:src="@drawable/library_biography" />
+
+                    <TextView
+                        android:id="@+id/top2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        tools:text="@string/biography"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/history"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/simple_item_click_bg"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_green_oval"
+                        android:scaleType="center"
+                        android:src="@drawable/library_history" />
+
+                    <TextView
+                        android:id="@+id/top3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        tools:text="@string/history"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/gray_line" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/library_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

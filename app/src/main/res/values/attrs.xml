@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollRefreshLayout">
+        <attr name="layout_scroll_empty" format="reference" />
+        <attr name="text_error_tip" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshLayout">
+        <attr name="layout_refresh_empty" format="reference" />
+        <attr name="layout_refresh_error" format="reference" />
+        <attr name="layout_refresh_loading" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BookTextView">
+        <attr name="bookColor" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyRatingBar">
+        <attr name="rateNum" format="integer" />
+        <attr name="rating" format="integer" />
+        <attr name="rateNormal" format="reference" />
+        <attr name="rateSelect" format="reference" />
+        <attr name="rateInterval" format="dimension" />
+        <attr name="isIndicator" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SquareGridView">
+        <!-- number of column -->
+        <attr name="numColumns" format="integer" />
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <!-- max children number limit -->
+        <attr name="maxSize" format="integer" />
+        <!-- height/width default is 1 -->
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ElasticCardView">
+        <attr name="ratio" />
+    </declare-styleable>
+
+    <declare-styleable name="CardViewPager">
+        <attr name="card_padding" format="dimension" />
+        <attr name="card_margin" format="dimension" />
+        <attr name="card_loop" format="boolean" />
+        <attr name="card_max_offset" format="dimension" />
+        <attr name="card_scale_rate" format="float" />
+    </declare-styleable>
+</resources>

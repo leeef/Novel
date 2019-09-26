@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_40dp"
+            android:scaleType="center"
+            android:src="@drawable/launch_one" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/zhexuejia"
+            android:textColor="@color/color_020202"
+            android:layout_margin="@dimen/size_5dp"
+            android:textSize="@dimen/text_18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/philosopher"
+            android:textColor="@color/color_020202"
+            android:layout_margin="@dimen/size_5dp"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/size_5dp"
+            android:text="@string/v1_10"
+            android:textColor="@color/color_020202"
+            android:textSize="@dimen/text_11sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/splash_tv_skip"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginRight="@dimen/size_16dp"
+        android:background="@drawable/bg_skip"
+        android:gravity="center"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

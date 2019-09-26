@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/card_share_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:textColor="@color/color_B36321"
+                android:layout_marginEnd="@dimen/size_7dp"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:id="@+id/card_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_B36321"
+                android:gravity="bottom"
+                android:textSize="@dimen/size_50sp"
+                tools:text="50" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_alignBottom="@id/bg"
+            android:gravity="center"
+            android:text="@string/share_it_with_friends"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13sp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:src="@drawable/cha" />
+
+
+</LinearLayout>

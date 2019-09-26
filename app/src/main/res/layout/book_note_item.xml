@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/type_underline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:background="@drawable/simple_item_click_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/book_note_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/size_10dp"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/size_2dp"
+                android:src="@drawable/type_note"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/book_note_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_5dp"
+                android:layout_marginEnd="@dimen/size_30dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_12sp"
+                tools:text="China is a multi-ethnic country. " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/book_type_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/size_2dp"
+                android:src="@drawable/type_underline"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_65c933" />
+
+                <TextView
+                    android:id="@+id/book_underline_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:layout_marginEnd="@dimen/size_30dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/text_12sp"
+                    tools:text="Ming  and  Qing  Dynasties ,  modern  Chinese characters  and modern  Chinese  characters. China is a multi-ethnic country. " />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@color/color_f3f3f3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/delete_button"
+        android:layout_width="@dimen/size_64dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/simple_item_click_bg_65c933"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+</LinearLayout>

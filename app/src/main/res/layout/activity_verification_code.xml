@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+
+        <include layout="@layout/back_view" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_50dp"
+        android:text="@string/input_verification_code"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/verified_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/has_been_sent_to"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/verified_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:text="@string/remain"
+            android:textColor="@color/color_65c933"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/verified_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@drawable/verified_bg"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="12"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/verified_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@drawable/verified_bg"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="12"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/verified_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@drawable/verified_bg"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="12"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/verified_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@drawable/verified_bg"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLength="12"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/verified_input"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:cursorVisible="false"
+            android:inputType="number" />
+    </RelativeLayout>
+
+
+</LinearLayout>

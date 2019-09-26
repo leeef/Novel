@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/book_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/explore_image_1"
+            android:layout_margin="@dimen/size_10dp"/>
+
+        <LinearLayout
+            android:id="@+id/explore_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/image_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/top_100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13sp"
+                android:textStyle="bold"
+                tools:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/image_sign_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14sp"
+                android:textStyle="bold"
+                tools:text="Science books" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/library_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_23dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_exciting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10sp" />
+
+            <View
+                android:layout_width="@dimen/size_16dp"
+                android:layout_height="@dimen/size_2dp"
+                android:layout_marginTop="@dimen/size_6dp"
+                android:background="@color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/gray">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners
+                android:bottomLeftRadius="@dimen/size_15dp"
+                android:bottomRightRadius="@dimen/size_15dp"
+                android:topLeftRadius="@dimen/size_15dp"
+                android:topRightRadius="@dimen/size_15dp" />
+            <!--设置渐变-->
+            <!--angle控制渐变的方向-->
+            <gradient
+                android:angle="180"
+                android:endColor="#FDE5BF"
+                android:startColor="#D8C09A" />
+        </shape>
+    </item>
+
+</ripple>

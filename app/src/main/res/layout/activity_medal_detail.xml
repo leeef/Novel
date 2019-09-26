@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/color_65c933">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="@dimen/size_50dp"
+            android:background="@drawable/simple_item_click_bg_65c933"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/arrow_left" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/my_medal_picture"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Okami"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:text="Ten books were purchased"
+                android:textColor="@color/color_696969"
+                android:textSize="@dimen/text_18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_medal_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/medal_detail_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/medal_picture"
+                android:layout_width="184dp"
+                android:layout_height="144dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/medal_1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

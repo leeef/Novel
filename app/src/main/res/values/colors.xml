@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--common-->
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#99343434</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#DE6014</color>
+    <color name="gray">#b8b8b8</color>
+    <color name="green">#5FB236</color>
+    <color name="black">#000000</color>
+    <color name="light_pink">#fb9090</color>
+    <color name="light_white">#EEEEEE</color>
+    <color name="light_coffee">#A58D5E</color>
+    <color name="light_red">#EC4A48</color>
+    <color name="light_blue">#039BE5</color>
+    <color name="light_translucent">#23000000</color>
+    <color name="common_gray">#EEEEEE</color>
+
+    <!--list-->
+    <color name="color_727272">#727272</color>
+
+
+    <!--text-->
+
+    <color name="color_black">@color/black</color>
+
+    <color name="translucent_text">#96ffffff</color>
+
+    <color name="color_e3e3e3">#E3E3E3</color>
+
+    <!--性别选择颜色值-->
+    <color name="gender_select_boy_normal">#B0E2FF</color>
+    <color name="gender_select_boy_pressed">#B2DFEE</color>
+    <color name="gender_select_girl_normal">#EEA9B8</color>
+    <color name="gender_select_girl_pressed">#EEA2AD</color>
+
+    <!---->
+    <color name="color_88303f9f">#88303F9F</color>
+
+
+    <color name="color_191919">#191919</color>
+    <color name="color_cbcbcb">#CBCBCB</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_262626">#262626</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_f5f5f5">#F5F5F5</color>
+    <color name="color_d2d2d2">#D2D2D2</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_040404">#040404</color>
+    <color name="color_020202">#020202</color>
+    <color name="color_d6d7d9">#D6D7D9</color>
+    <color name="color_f6f4f5">#f6f4f5</color>
+    <color name="color_f8f8f8">#F8F8F8</color>
+    <color name="color_ababab">#ababab</color>
+    <color name="color_65c933">#65C933</color>
+    <color name="color_2c6304">#2C6304</color>
+    <color name="color_0065c933">#BC65C933</color>
+    <color name="color_c8c8c8">#c8c8c8</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_404040">#404040</color>
+    <color name="color_fefefe">#fefefe</color>
+    <color name="color_a5a5a5">#a5a5a5</color>
+    <color name="color_e4f0f3">#E4F0F3</color>
+    <color name="color_c9d4d5">#C9D4D5</color>
+    <color name="color_010101">#010101</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+
+    <!--read-->
+    <color name="book_read_1">#000000</color>
+    <color name="book_read_2">#ffffff</color>
+    <color name="book_read_3">#000000</color>
+    <color name="book_read_4">#000000</color>
+    <color name="book_read_5">#000000</color>
+    <color name="book_read_bg_1">#ffffff</color>
+    <color name="book_read_bg_2">#707070</color>
+    <color name="book_read_bg_3">#edf0db</color>
+    <color name="book_read_bg_4">#bfbfbf</color>
+    <color name="book_read_bg_5">#d7c9a2</color>
+
+    <color name="read_night">#000000</color>
+    <color name="read_bg_night">#ffffff</color>
+
+    <color name="color_f4070707">#F4070707</color>
+    <color name="color_2c2c2d">#2C2C2D</color>
+    <color name="color_3366cc">#3366CC</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_696969">#696969</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_2b3C33">#2B3C33</color>
+    <color name="color_8d6a29">#8D6A29</color>
+    <color name="color_d0d0d0">#d0d0d0</color>
+    <color name="color_080103">#080103</color>
+    <color name="test">#8729292A</color>
+    <color name="color_B36321">#B36321</color>
+    <color name="color_414141">#414141</color>
+
+</resources>

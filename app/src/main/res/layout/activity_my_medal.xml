@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_65c933"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="@dimen/size_50dp"
+                android:layout_height="@dimen/size_50dp"
+                android:background="@drawable/simple_item_click_bg_65c933"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/back_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/arrow_left" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_medal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginBottom="@dimen/size_40dp"
+            tools:text="My Medal: 3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/medal_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_15dp"
+        tools:text="Special Medal (11/11)"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_medal_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_20dp" />
+
+</LinearLayout>

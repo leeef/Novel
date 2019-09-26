@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dp"
+        android:background="@drawable/shape_corner_e4f0f3"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/book_cover_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/color_404040"
+                android:textSize="@dimen/text_13sp"
+                android:textStyle="bold"
+                tools:text="Superhero Movie" />
+
+            <TextView
+                android:id="@+id/book_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_10sp"
+                tools:text="Hollywood turned them into superheroes and supervillains." />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

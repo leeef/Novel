@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">WeWill</string>
+
+    <string-array name="tab_title">
+        <item>@string/tab_Explore</item>
+        <item>@string/tab_Library</item>
+        <item>@string/tab_Bookshelf</item>
+        <item>@string/tab_Personal</item>
+    </string-array>
+
+    <string-array name="country_code">
+        <item>254 Kenyan</item>
+        <item>234 Nigeria</item>
+        <item>244 Angola [Africa]</item>
+        <item> 86 China</item>
+    </string-array>
+
+    <string-array name="recharge_amount">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+    </string-array>
+    <integer-array name="card_count">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+    </integer-array>
+    <string-array name="all_category_list">
+        <item>Adventure</item>
+        <item>Art</item>
+        <item>Biography</item>
+        <item>Business</item>
+        <item>Classic</item>
+        <item>Cooking</item>
+        <item>Criticism</item>
+        <item>Drama</item>
+        <item>Espionage</item>
+        <item>Etiquette</item>
+        <item>Fantasy</item>
+        <item>Gay/Lesbian</item>
+        <item>Ghost Stories</item>
+    </string-array>
+    <string-array name="my_medal_name">
+        <item>Notes On Talent</item>
+        <item>Open Shaers</item>
+        <item>Buy Got Talent</item>
+        <item>Reading Got Talent</item>
+        <item>Philosopher God</item>
+        <item>Heart Flow</item>
+        <item>New Comer</item>
+        <item>Bookmark God</item>
+        <item>Bookmar Talent</item>
+        <item>Buy God</item>
+        <item>Reading God</item>
+    </string-array>
+    <string-array name="library_detail_list">
+        <item>Others also have collections</item>
+        <item>Books purchased by others</item>
+        <item>Recommended books</item>
+    </string-array>
+
+    <string-array name="library_type_list">
+        <item>Books you like</item>
+        <item>Adventure</item>
+        <item>Recommended</item>
+        <item>Business</item>
+        <item>Biography</item>
+        <item>Drama</item>
+        <item>Fantasy</item>
+        <item>Fiction and Literature</item>
+        <item>History</item>
+        <item>Myth</item>
+        <item>Philosophy</item>
+        <item>Poetry</item>
+        <item>Psychology</item>
+        <item>Religion</item>
+        <item>Romance</item>
+        <item>Thriller</item>
+    </string-array>
+    <string-array name="explore_type_list">
+        <item>Pirate Tales</item>
+        <item>Ranking List</item>
+        <item>Detective</item>
+        <item>Travel</item>
+        <item>Short Story</item>
+        <item>Thriller</item>
+        <item>Free books</item>
+        <item>Nature</item>
+        <item>Young Readers	</item>
+        <item>Western</item>
+        <item>Correspondence</item>
+        <item>Etiquette</item>
+    </string-array>
+
+
+    <!--SplashActivity-->
+    <string name="skip">skip</string>
+
+
+    <string name="tab_Explore">Explore</string>
+    <string name="tab_Bookshelf">Bookshelf</string>
+    <string name="tab_Library">Library</string>
+    <string name="tab_Personal">Personal</string>
+    <string name="my_account">My Account</string>
+    <string name="balance">Balance</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="recharge">Recharge</string>
+    <string name="my_download">My download</string>
+    <string name="Proposal">Proposal</string>
+    <string name="register_login">Register | Login</string>
+    <string name="delete">Delete</string>
+    <string name="editing_bookshelf">Editing bookshelf</string>
+    <string name="whole">Whole</string>
+    <string name="new_books">New books</string>
+    <string name="more">More</string>
+    <string name="enter_your_preferred_type">Enter your preferred type</string>
+    <string name="literature">Literature</string>
+    <string name="biography">Biography</string>
+    <string name="history">History</string>
+    <string name="books_you_like">Books you like</string>
+    <string name="change">change</string>
+    <string name="superhero_movie">Superhero Movie</string>
+    <string name="recommended">Recommended</string>
+    <string name="zhexuejia">philosopher</string>
+    <string name="philosopher">Philosopher</string>
+    <string name="v1_10">V1.10</string>
+    <string name="Log_on">Log on</string>
+    <string name="my_medal">My Medal</string>
+    <string name="input_verification_code">Input Verification Code</string>
+    <string name="has_been_sent_to">Has been sent to</string>
+    <string name="remain">Remain</string>
+    <string name="log_on">Log on</string>
+    <string name="my_information">My Information</string>
+    <string name="head_portrait">Head Portrait</string>
+    <string name="my_nickname">My Nickname</string>
+    <string name="bind_cell_phone">Bind Cell Phone</string>
+    <string name="input_nickname">Input Nickname</string>
+    <string name="modify_nickname">Modify Nickname</string>
+    <string name="enter_the_new_phone_number">Enter The New Phone Number</string>
+    <string name="replace">Replace</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="determine">Determine</string>
+    <string name="please_enter_your_password_again">Please Enter Your Password again</string>
+    <string name="set_focus">Set Focus</string>
+    <string name="change_password">Change Password</string>
+    <string name="check_update">Check Update</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="_0_00mb">0.00MB</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="set_password">Set password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="enter_the_new_password_again">Enter the new password again</string>
+    <string name="introduce">Introduce</string>
+    <string name="introduce_text">"\u3000\u3000Philosopher Reading is a kind of Reading APP which integrates reading interaction and other functions to meet the needs of users\'readingand entertainment.integrates reading , interaction and other functions to meet the needs of and entertainment. integrates reading, interaction and other functions to meet the needs of users\'reading and enterigtainment.</string>
+    <string name="copyright_2019_2022">Copyright©2019-2022</string>
+    <string name="please_enter_mobile_phone">Please Enter Mobile Phone</string>
+    <string name="upload_pictures">Upload Pictures</string>
+    <string name="submission">Submission</string>
+    <string name="telephone_400_000_0000">Telephone：400-000-0000</string>
+    <string name="contact_mailbox_philosopher_netzero_net">Contact mailbox：philosopher@netzero.net</string>
+    <string name="Delete">Delete</string>
+    <string name="my_card">My Card</string>
+    <string name="my_balance">My Balance:</string>
+    <string name="choose_the_amount_of_recharge">Choose the amount of recharge</string>
+    <string name="price">Price: $</string>
+    <string name="total_sum">Total sum：</string>
+    <string name="payment">Payment</string>
+    <string name="expense_record">Expense Record</string>
+    <string name="my_subscriptions">My Subscriptions：</string>
+    <string name="not_opened">Not Opened</string>
+    <string name="opening">Opening</string>
+    <string name="my_record">My Record</string>
+    <string name="library_subscription_service">Library Subscription Service</string>
+    <string name="_12_months">12 Months</string>
+    <string name="book_review">Book review</string>
+    <string name="all_categories">All Categories</string>
+    <string name="next">Next</string>
+    <string name="upper">Upper</string>
+    <string name="bright">Bright</string>
+    <string name="system">System</string>
+    <string name="aa">Aa-</string>
+    <string name="font">Font</string>
+    <string name="colour">Colour</string>
+    <string name="format">Format</string>
+    <string name="trial_reading">Trial reading</string>
+    <string name="catalog">Catalog</string>
+    <string name="copy">Copy</string>
+    <string name="underline">Underline</string>
+    <string name="note">Note</string>
+    <string name="share">Share</string>
+    <string name="purchase">Purchase</string>
+    <string name="complete">Complete</string>
+    <string name="write_what_you_want_to_say">Write What You Want To Say</string>
+    <string name="search_empty_sign">The book was not found.</string>
+    <string name="download_empty_sign">No download record.</string>
+    <string name="record_empty_sign">No order record yet.</string>
+    <string name="top_100">Top100</string>
+    <string name="loading_sign">loading...</string>
+    <string name="gift_card">Gift Card</string>
+    <string name="card_bottom_txt">And friends \nLet\'s enjoy reading together</string>
+    <string name="no_more">no more ~</string>
+    <string name="more_exciting">More exciting</string>
+    <string name="content">content</string>
+    <string name="cancel">cancel</string>
+    <string name="share_it_with_friends">Share it with friends</string>
+
+    <string name="facebook_app_id">321913055376018</string>
+    <string name="fb_login_protocol_scheme">fb321913055376018</string>
+    <string name="pay">pay</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_a_new_password">Enter a New Password</string>
+
+    <string name="error">Server exception</string>
+    <string name="save">save</string>
+    <string name="rebind">ReBind</string>
+
+    <string name="card_share_title">WeWill E-books Gift Card</string>
+    <string name="card_share_info">Reading Makes You Different! Download WeWill APP, Enjoy Millions of E-books!</string>
+    
+    <string name="book_share_title">1$ Enjoy Millions of E-books!</string>
+    <string name="book_share_info">Knowledge Changes Destiny！Download WeWill APP, Get Your Mobil Library!</string>
+
+
+</resources>

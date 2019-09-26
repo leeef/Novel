@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white">
+
+        <include layout="@layout/back_view" />
+
+        <TextView
+            style="@style/titleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Proposal" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_line_no_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/feed_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:hint="@string/enter_the_new_phone_number"
+                    android:lines="8"
+                    android:maxLength="500"
+                    android:padding="@dimen/size_10dp"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feed_back"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:text="0/500" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/gray_line_no_margin" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/please_enter_mobile_phone"
+                android:lines="1"
+                android:maxLength="20"
+                android:padding="@dimen/size_10dp"
+                android:textSize="@dimen/text_14sp" />
+
+            <include layout="@layout/gray_line_no_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:text="@string/upload_pictures"
+                    android:textColor="@color/color_cccccc"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/image_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:text="0/3"
+                    android:textColor="@color/color_cccccc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:background="@color/color_f5f5f5" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/addImage"
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_50dp"
+                    android:layout_margin="@dimen/size_20dp"
+                    android:src="@drawable/addbook" />
+
+                <LinearLayout
+                    android:id="@+id/image_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line_no_margin" />
+
+            <LinearLayout
+                android:id="@+id/submission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:background="@drawable/login_button_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/login_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:text="@string/submission"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/size_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telephone_400_000_0000"
+                    android:textColor="@color/color_cccccc"
+                    android:textSize="@dimen/text_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_mailbox_philosopher_netzero_net"
+                    android:textColor="@color/color_cccccc"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

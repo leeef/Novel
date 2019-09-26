@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_333333"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/reading_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_333333">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="@dimen/size_50dp"
+            android:background="@drawable/simple_item_click_bg_333333"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/gift_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/reading_top"
+        android:layout_marginStart="@dimen/size_13dp"
+        android:layout_marginTop="@dimen/size_80dp"
+        android:layout_marginEnd="@dimen/size_13dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/shape_common_corner" />
+
+    <ImageView
+        android:id="@+id/card_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reading_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:layout_marginEnd="43dp"
+        tools:src="@drawable/card5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_count_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_cover"
+        android:layout_marginStart="@dimen/size_13dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_13dp"
+        android:layout_marginBottom="26dp" />
+
+
+</RelativeLayout>

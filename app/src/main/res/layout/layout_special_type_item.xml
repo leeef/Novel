@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/simple_item_click_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dp"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/book_cover_layout"
+            android:layout_width="87dp"
+            android:layout_height="117dp"
+            android:layout_margin="@dimen/size_10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/book_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_404040"
+                    android:textSize="@dimen/text_14sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@id/book_rank_layout"
+                    android:layout_marginEnd="@dimen/size_10dp"
+                    tools:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+
+                <LinearLayout
+                    android:id="@+id/book_rank_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_5dp"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/book_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:src="@drawable/book_rank_first" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:ellipsize="end"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_13sp"
+                tools:text="Victor Hugo" />
+
+            <TextView
+                android:id="@+id/book_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/size_5dp"
+                android:lines="2"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_11sp"
+                tools:text="Hollywood turned them into superheroes and supervillains." />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/simple_item_click_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/book_cover_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Superhero Movie"
+                android:textColor="@color/color_404040"
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:ellipsize="end"
+                tools:text="Victor Hugo"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/book_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:ellipsize="end"
+                android:lines="2"
+                tools:text="Hollywood turned them into superheroes and supervillains."
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

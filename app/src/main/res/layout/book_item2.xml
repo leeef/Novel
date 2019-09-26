@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_10dp"
+    android:background="@drawable/simple_item_click_bg"
+    android:gravity="start"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/book_cover_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10dp"/>
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="@dimen/size_87dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/superhero_movie"
+        android:textColor="@color/color_404040"
+        android:textSize="@dimen/text_11sp" />
+</LinearLayout>

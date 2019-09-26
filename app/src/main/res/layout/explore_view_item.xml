@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.bx.philosopher.widget.cardslideview.ElasticCardView
+            android:id="@+id/ElasticCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/size_10dp"
+            app:ratio="0">
+
+            <LinearLayout
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/book_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_14dp"
+                    android:layout_marginTop="@dimen/size_30dp"
+                    tools:text="@string/recommended"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_24sp" />
+
+                <TextView
+                    android:id="@+id/book_second_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_14dp"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    tools:text="All kinds of popular books"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/text_18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/book_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/explore_more_container"
+                        android:gravity="center"
+                        android:visibility="visible">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/explore_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:scrollbars="none"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:id="@+id/book_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@color/color_2b3C33"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:id="@+id/shadow"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/book_cover"
+                                android:visibility="gone">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="-30dp">
+
+                                    <View
+                                        android:id="@+id/shadow4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shadow4" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="-30dp">
+
+                                    <View
+                                        android:id="@+id/shadow3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shadow3" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="-30dp">
+
+                                    <View
+                                        android:id="@+id/shadow2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shadow2" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="-30dp">
+
+                                    <View
+                                        android:id="@+id/shadow1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shadow1" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+
+                            <ImageView
+                                android:id="@+id/book_cover"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginBottom="-10dp"
+                                android:layout_marginStart="@dimen/size_20dp"
+                                android:layout_marginEnd="@dimen/size_20dp"
+                                tools:src="@drawable/card5"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/size_20dp"
+                                android:gravity="center"
+                                android:text="@string/card_bottom_txt"
+                                android:textColor="#727660"
+                                android:textSize="@dimen/text_12sp" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/explore_more_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_horizontal|bottom"
+                        android:paddingBottom="@dimen/size_10dp">
+
+                        <TextView
+                            android:id="@+id/explore_more"
+                            android:layout_width="@dimen/size_95dp"
+                            android:layout_height="@dimen/size_30dp"
+                            android:background="@drawable/more_bg"
+                            android:gravity="center"
+                            android:text="@string/more"
+                            android:textColor="@color/color_d2d2d2"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </com.bx.philosopher.widget.cardslideview.ElasticCardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
